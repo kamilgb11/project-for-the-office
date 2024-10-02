@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Pracowników</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" id="Lewy">
+                <nav>
+                    <ul>
+                        <li><a href="kontrolki.html">Różne kontrolki HTML</a></li>
+                        <li><a href="pracownicy.html">Tabela Pracowników</a></li>
+                        <li><a href="faktury.html">Tabela Faktur VAT</a></li>
+                        <li><a href="delegacje.html">Tabela Delegacji BD</a></li>
+                        <li><a href="kontrahenci.html">Dane Kontrahentów</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9" id="Prawy">
+                <h2>Tabela Pracowników</h2>
+                <input type="color" id="kolor1" value="#f0f0f0"> Kolor 1
+                <input type="color" id="kolor2" value="#d0d0d0"> Kolor 2
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Lp.</th>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Stanowisko</th>
+                            <th>Data zatrudnienia</th>
+                            <th>Ilość dni urlopowych</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Jan</td>
+                            <td>Kowalski</td>
+                            <td>Manager</td>
+                            <td>2020-01-15</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Anna</td>
+                            <td>Nowak</td>
+                            <td>Developer</td>
+                            <td>2019-07-01</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Paweł</td>
+                            <td>Zieliński</td>
+                            <td>Designer</td>
+                            <td>2021-03-22</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Katarzyna</td>
+                            <td>Wiśniewska</td>
+                            <td>Tester</td>
+                            <td>2018-11-30</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Marcin</td>
+                            <td>Lewandowski</td>
+                            <td>Support</td>
+                            <td>2020-06-15</td>
+                            <td>19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

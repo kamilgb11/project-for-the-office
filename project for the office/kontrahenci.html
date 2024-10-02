@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane Kontrahentów</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" id="Lewy">
+                <nav>
+                    <ul>
+                        <li><a href="kontrolki.html">Różne kontrolki HTML</a></li>
+                        <li><a href="pracownicy.html">Tabela Pracowników</a></li>
+                        <li><a href="faktury.html">Tabela Faktur VAT</a></li>
+                        <li><a href="delegacje.html">Tabela Delegacji BD</a></li>
+                        <li><a href="kontrahenci.html">Dane Kontrahentów</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9" id="Prawy">
+                <h2>Dane Kontrahentów</h2>
+                <form id="kontrahent-form">
+                    <div class="form-group">
+                        <label for="nip">NIP</label>
+                        <input type="text" id="nip" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="regon">REGON</label>
+                        <input type="text" id="regon" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nazwa">Nazwa</label>
+                        <input type="text" id="nazwa" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="czy-platnik-vat">Czy płatnik VAT?</label>
+                        <input type="checkbox" id="czy-platnik-vat">
+                    </div>
+                    <div class="form-group">
+                        <label for="ulica">Ulica</label>
+                        <input type="text" id="ulica" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numer-domu">Numer Domu</label>
+                        <input type="text" id="numer-domu" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numer-mieszkania">Numer Mieszkania</label>
+                        <input type="text" id="numer-mieszkania" class="form-control">
+                    </div>
+                    <button type="button" id="dodaj-kontrahenta" class="btn btn-success">Dodaj kontrahenta</button>
+                    <button type="button" id="edytuj-kontrahenta" class="btn btn-warning">Edytuj kontrahenta</button>
+                    <button type="button" id="usun-kontrahenta" class="btn btn-danger">Usuń kontrahenta</button>
+                </form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NIP</th>
+                            <th>REGON</th>
+                            <th>Nazwa</th>
+                            <th>Czy płatnik VAT?</th>
+                            <th>Ulica</th>
+                            <th>Numer Domu</th>
+                            <th>Numer Mieszkania</th>
+                        </tr>
+                    </thead>
+                    <tbody id="kontrahenci-tbody">
+                        <!-- Dane z bazy danych -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

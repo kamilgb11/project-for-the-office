@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Różne kontrolki HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" id="Lewy">
+                <nav>
+                    <ul>
+                        <li><a href="kontrolki.html">Różne kontrolki HTML</a></li>
+                        <li><a href="pracownicy.html">Tabela Pracowników</a></li>
+                        <li><a href="faktury.html">Tabela Faktur VAT</a></li>
+                        <li><a href="delegacje.html">Tabela Delegacji BD</a></li>
+                        <li><a href="kontrahenci.html">Dane Kontrahentów</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9" id="Prawy">
+                <h2>Różne kontrolki HTML</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nip">NIP</label>
+                        <input type="text" id="nip" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="regon">REGON</label>
+                        <input type="number" id="regon" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nazwa">Nazwa</label>
+                        <input type="text" id="nazwa" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="data_powstania">Data Powstania</label>
+                        <input type="date" id="data_powstania" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="ulica">Ulica</label>
+                        <input type="text" id="ulica" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numer_domu">Numer Domu</label>
+                        <input type="text" id="numer_domu" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numer_mieszkania">Numer Mieszkania</label>
+                        <input type="text" id="numer_mieszkania" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="uwagi">Uwagi</label>
+                        <textarea id="uwagi" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="kolory">Kolory</label>
+                        <select id="kolory" class="form-control">
+                            <option>Zielony</option>
+                            <option>Niebieski</option>
+                            <option>Szary</option>
+                            <option>Turkusowy</option>
+                            <option>Granatowy</option>
+                            <option>Czerwony</option>
+                            <option>Biały</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vat">VAT</label>
+                        <select id="vat" class="form-control">
+                            <option>ZW</option>
+                            <option>NP.</option>
+                            <option>0%</option>
+                            <option>3%</option>
+                            <option>8%</option>
+                            <option>23%</option>
+                        </select>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>Element</li>
+                            <li>Element</li>
+                            <li>Element</li>
+                        </ol>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
